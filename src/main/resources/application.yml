@@ -1,0 +1,7 @@
+spring.application.name: logbook-error
+
+logbook:
+  filter.enabled: true
+  secure-filter.enabled: true
+  format.style: http
+

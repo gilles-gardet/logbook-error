@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>com.ggardet</groupId>
+    <artifactId>logbook-error</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+    <name>logbook-error</name>
+    <description>logbook-error</description>
+
+    <properties>
+        <java.version>17</java.version>
+    </properties>
+
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>2.7.20.2</version>
+<!--        <version>3.3.0</version>-->
+        <relativePath/>
+    </parent>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-security</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.zalando</groupId>
+            <artifactId>logbook-spring-boot-starter</artifactId>
+            <version>3.9.0</version>
+        </dependency>
+        <!-- SPRINGBOOT 2.7.X START -->
+        <dependency>
+            <groupId>org.zalando</groupId>
+            <artifactId>logbook-servlet</artifactId>
+            <classifier>javax</classifier>
+            <version>3.9.0</version>
+        </dependency>
+        <!-- SPRINGBOOT 2.7.X END -->
+    </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+            </plugin>
+        </plugins>
+    </build>
+
+</project>
